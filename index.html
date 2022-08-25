@@ -104,25 +104,19 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#banner">Home</a>
+                                <a href="#banner">Domů</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#about">O mně</a>
                             </li>
                             <li>
-                                <a href="#gallery">Gallery</a>
+                                <a href="#gallery">Galerie</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#services">Služby</a>
                             </li>
                             <li>
-                                <a href="#testimonials">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#clients">Clients</a>
-                            </li>
-                            <li>
-                                <a href="#pricing">Pricing</a>
+                                <a href="#contacts">kontakty</a>
                             </li>
                         </ul>
                     </nav>
@@ -269,60 +263,6 @@
         <!--End of Gallery-->
 
 
-        <!--Content Section-->
-        <div id="chengeme" class="scrollto clearfix">
-
-            <div class="row no-padding-bottom clearfix">
-
-
-                <!--Content Left Side-->
-                <div class="col-3">
-                    <!--User Testimonial-->
-                    <blockquote class="testimonial text-right bigtest">
-                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua</q>
-                        <footer>— John Doe, Happy Customer</footer>
-                    </blockquote>
-                    <!-- End of Testimonial-->
-
-                </div>
-                <!--End Content Left Side-->
-
-                <!--Content of the Right Side-->
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>BELIEVING</h3>
-                        <h2 class="section-title">Focusing On What Matters Most</h2>
-                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-                    </div>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo.
-                    </p>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet!
-                    </p>
-                    <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-                    <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
-                        WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <!--End Content Right Side-->
-
-                <div class="col-3">
-                    <img src="images/dancer.jpg" alt="Dancer"/>
-                </div>
-
-            </div>
-
-
-        </div>
-        <!--End of Content Section-->
-
         <!--Clients-->
         <section id="clients" class="scrollto clearfix">
             <div class="row clearfix">
@@ -393,10 +333,12 @@
                 <div class="col-3">
                     <ul>
                         <li>
-                            <span class="services-button" id="services-1" onclick="showServices(1);">PROJEKTOVÁ ČINNOST</span>
+                            <span class="services-button" id="services-1"
+                                  onclick="showServices(1);">PROJEKTOVÁ ČINNOST</span>
                         </li>
                         <li>
-                            <span class="services-button" id="services-2" onclick="showServices(2);">INŽENÝRSKÁ ČINNOST</span>
+                            <span class="services-button" id="services-2"
+                                  onclick="showServices(2);">INŽENÝRSKÁ ČINNOST</span>
                         </li>
                         <li>
                             <span class="services-button" id="services-3" onclick="showServices(3);">DOZORY</span>
@@ -493,38 +435,48 @@
         <!--End of Services-->
 
         <!-- ================ contact section start ================= -->
-        <section class="contact-section area-padding">
+        <section id="contacts" class="contact-section area-padding">
             <div class="contact-container">
                 <div class="d-map">
-                    <div id="map" style="height: 480px;"></div>
-                    <script>
-                        function initMap() {
-                            var uluru = {lat: 49.754415, lng: 16.392448};
-                            var grayStyles = [
-                                {
-                                    featureType: "all",
-                                    stylers: [
-                                        {saturation: -100},
-                                        {lightness: 60}
-                                    ]
-                                },
-                                {elementType: 'labels.text.fill', stylers: [{color: '#333333'}]}
-                            ];
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                center: uluru,
-                                zoom: 11,
-                                styles: grayStyles,
-                                scrollwheel: true
-                            });
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <div style="width: 100%">
+                                <iframe width="100%" height="450"
+                                        src="https://maps.google.com/maps?width=100%25&amp;height=450&amp;hl=en&amp;q=49.754431,%2016.392451+(Petr%20%C4%8Ce%C5%A1ka)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                    <a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
 
-                            const marker = new google.maps.Marker({
-                                position: uluru,
-                                map: map,
-                            });
-                        }
 
-                    </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+                    <!--                    <script>-->
+                    <!--                        function initMap() {-->
+                    <!--                            var uluru = {lat: 49.754415, lng: 16.392448};-->
+                    <!--                            var grayStyles = [-->
+                    <!--                                {-->
+                    <!--                                    featureType: "all",-->
+                    <!--                                    stylers: [-->
+                    <!--                                        {saturation: -100},-->
+                    <!--                                        {lightness: 60}-->
+                    <!--                                    ]-->
+                    <!--                                },-->
+                    <!--                                {elementType: 'labels.text.fill', stylers: [{color: '#333333'}]}-->
+                    <!--                            ];-->
+                    <!--                            var map = new google.maps.Map(document.getElementById('map'), {-->
+                    <!--                                center: uluru,-->
+                    <!--                                zoom: 11,-->
+                    <!--                                styles: grayStyles,-->
+                    <!--                                scrollwheel: true-->
+                    <!--                            });-->
+
+                    <!--                            const marker = new google.maps.Marker({-->
+                    <!--                                position: uluru,-->
+                    <!--                                map: map,-->
+                    <!--                            });-->
+                    <!--                        }-->
+                    <!--                    </script>-->
+                    <!--                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>-->
 
                 </div>
 
@@ -536,7 +488,7 @@
                             </div>
                             <div class="media-body">
                                 <h3><a href="tel:+420 736 255 948">+420 736 255 948</a></h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                                <!--                                <p>maly šedy text pod černym</p>-->
                             </div>
                         </div>
                         <div class="media contact-info wow fadeInUp" data-wow-delay="0.2s">
@@ -545,7 +497,6 @@
                             </div>
                             <div class="media-body">
                                 <h3><a href="mailto:pc@svi.cz">pc@svi.cz</a></h3>
-                                <p>Send us your query anytime!</p>
                             </div>
                         </div>
                     </div>
@@ -565,8 +516,7 @@
                                 <i class="fa fa-book fa-2x"></i>
                             </div>
                             <div class="media-body">
-                                <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                                <h3><a href="#">IČO: 123456789</a></h3>
                             </div>
                         </div>
                     </div>
@@ -583,32 +533,26 @@
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
-
-            <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
-
-            <!--Social Icons in Footer-->
-            <ul class="col-2 social-icons">
-                <li>
-                    <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Google+" href="http://google.com/+username">
-                        <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
-                        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="col-1">
+                Copyright
+                <span id="actual_year"></span><script>document.getElementById("actual_year").innerHTML = new Date().getFullYear();</script>
+            </div>
+            <!--Developer contact in Footer-->
+            <div class="col-2">
+                <span>Vytvořil Petr Češka</span>
+                <ul class="social-icons">
+                    <li>
+                        <a target="_blank" title="Webpage" href="#">
+                            <i class="fa fa-globe fa-1x"></i><span>Web</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="LinkedIn" href="#">
+                            <i class="fa fa-linkedin fa-1x"></i><span>LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <!--End of Social Icons in Footer-->
         </div>
     </footer>
