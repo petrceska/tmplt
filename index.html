@@ -331,26 +331,26 @@
             <div class="row clearfix">
 
                 <div class="col-3">
-                    <ul>
+                    <ul class="service-menu">
                         <li>
-                            <span class="services-button" id="services-1"
+                            <span class="services-button fadeInLeft"  data-wow-delay="0.1s" id="services-1"
                                   onclick="showServices(1);">PROJEKTOVÁ ČINNOST</span>
                         </li>
                         <li>
-                            <span class="services-button" id="services-2"
+                            <span class="services-button fadeInLeft"  data-wow-delay="0.2s" id="services-2"
                                   onclick="showServices(2);">INŽENÝRSKÁ ČINNOST</span>
                         </li>
                         <li>
-                            <span class="services-button" id="services-3" onclick="showServices(3);">DOZORY</span>
+                            <span class="services-button fadeInLeft"  data-wow-delay="0.3s" id="services-3" onclick="showServices(3);">DOZORY</span>
                         </li>
                         <li>
-                            <span class="services-button" id="services-4" onclick="showServices(4);">OSTATNÍ</span>
+                            <span class="services-button fadeInLeft"  data-wow-delay="0.4s" id="services-4" onclick="showServices(4);">OSTATNÍ</span>
                         </li>
                     </ul>
 
                 </div>
 
-                <div class="col-2-3">
+                <div class="col-2-3 fadeInRight">
                     <div class="services-data" id="services-data-1">
                         <ul>
                             <li> projekty pozemních staveb– stavby pro bydlení, ubytování a rekreaci, administrativní
@@ -449,35 +449,6 @@
                         </div>
                     </div>
 
-
-                    <!--                    <script>-->
-                    <!--                        function initMap() {-->
-                    <!--                            var uluru = {lat: 49.754415, lng: 16.392448};-->
-                    <!--                            var grayStyles = [-->
-                    <!--                                {-->
-                    <!--                                    featureType: "all",-->
-                    <!--                                    stylers: [-->
-                    <!--                                        {saturation: -100},-->
-                    <!--                                        {lightness: 60}-->
-                    <!--                                    ]-->
-                    <!--                                },-->
-                    <!--                                {elementType: 'labels.text.fill', stylers: [{color: '#333333'}]}-->
-                    <!--                            ];-->
-                    <!--                            var map = new google.maps.Map(document.getElementById('map'), {-->
-                    <!--                                center: uluru,-->
-                    <!--                                zoom: 11,-->
-                    <!--                                styles: grayStyles,-->
-                    <!--                                scrollwheel: true-->
-                    <!--                            });-->
-
-                    <!--                            const marker = new google.maps.Marker({-->
-                    <!--                                position: uluru,-->
-                    <!--                                map: map,-->
-                    <!--                            });-->
-                    <!--                        }-->
-                    <!--                    </script>-->
-                    <!--                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>-->
-
                 </div>
 
                 <div class="row clearfix">
@@ -533,12 +504,8 @@
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
-            <div class="col-1">
-                Copyright
-                <span id="actual_year"></span><script>document.getElementById("actual_year").innerHTML = new Date().getFullYear();</script>
-            </div>
             <!--Developer contact in Footer-->
-            <div class="col-2">
+            <div class="col-2 text-center">
                 <span>Vytvořil Petr Češka</span>
                 <ul class="social-icons">
                     <li>
@@ -547,13 +514,20 @@
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" title="LinkedIn" href="#">
+                        <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/petr-ceska/">
                             <i class="fa fa-linkedin fa-1x"></i><span>LinkedIn</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <!--End of Social Icons in Footer-->
+            <div class="col-2 text-center">
+                &copy;
+                &nbsp;
+                <span id="actual_year"></span>
+                <script>document.getElementById("actual_year").innerHTML = new Date().getFullYear();</script>
+                Petr Češka
+            </div>
         </div>
     </footer>
     <!--End of Footer-->

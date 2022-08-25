@@ -2501,8 +2501,12 @@ blockquote {
 }
 
 .services-button.active {
-    color: #DDD;
+    color: white;
     background-color: #d2b356;
+}
+
+.services-button.active:hover {
+    color: black;
 }
 
 .services-button.inactive {
@@ -2512,15 +2516,27 @@ blockquote {
 .services-data.active {
     color: black;
     background-color: white;
+    margin-left: 2em;
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .services-data.inactive {
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
 }
 
 .services-button:hover {
     cursor: pointer;
     color: #d2b356;
+}
+
+.service-menu {
+    margin-left: 5em;
+    list-style-type: none;
 }
 
 
