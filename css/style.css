@@ -2486,8 +2486,6 @@ blockquote {
     display: block;
 }
 
-/*# sourceMappingURL=contacts.css.map */
-
 #services ul {
     list-style-type: square;
     font-size: 17px;
@@ -2498,15 +2496,26 @@ blockquote {
 
 .services-button {
     display: block;
+    padding-left: 2em;
+    text-decoration: none;
+    margin: 0.5em 0;
 }
 
-.services-button.active {
+.services-button.active{
+    text-decoration: underline;
+    color: #d2b356;
+
+}
+
+.services-button.active i {
     color: white;
     background-color: #d2b356;
+    border-radius: 3%;
 }
-
-.services-button.active:hover {
-    color: black;
+.services-button i {
+    aspect-ratio : 1 / 1;
+    padding: 3px;
+    margin-right: 4px;
 }
 
 .services-button.inactive {
@@ -2535,8 +2544,35 @@ blockquote {
 }
 
 .service-menu {
-    margin-left: 5em;
-    list-style-type: none;
+    margin-left: 2em;
+    list-style-type: none !important;
 }
 
+/*=================== contact banner start ====================*/
+.contact-info {
+    margin-bottom: 12px;
+}
+.contact-info__icon {
+    margin-right: 20px;
+}
+.contact-info__icon i, .contact-info__icon span {
+    color: #8f9195;
+    font-size: 27px;
+}
+.contact-info .media-body h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #222;
+}
+.contact-info .media-body h3 a {
+    color: #222;
+}
+.contact-info .media-body h3 a:hover {
+    color: #555;
+}
+.contact-info .media-body p {
+    color: #999999;
+}
+
+/*=================== contact banner end ====================*/
 
