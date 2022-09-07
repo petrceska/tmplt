@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -9,10 +8,10 @@
     <!--Meta Keywords and Description-->
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon">
 
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="css/style.css">
@@ -27,15 +26,15 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css">
 
     <!--Google Webfonts-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
 
 
 </head>
-<body>
+<body style="overflow-y: visible;">
 
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status" class="la-ball-triangle-path">
+<div id="preloader" style="display: none;">
+    <div id="status" class="la-ball-triangle-path" style="display: none;">
         <div></div>
         <div></div>
         <div></div>
@@ -44,16 +43,17 @@
 <!--End of Preloader-->
 
 <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+    <div class="top-border wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight  animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp  animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft  animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
 </div>
 
 <div id="wrapper">
 
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5" tabindex="-1"
+            style="background-position: center -8px;">
+        <div id="header" class="nav-collapse  sticky fadeIn animated" style="position: fixed; z-index: 9999;">
             <div class="row clearfix">
                 <div class="col-1">
 
@@ -61,11 +61,11 @@
                     <div id="logo">
 
                         <!--Logo that is shown on the banner-->
-                        <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
+                        <img src="images/logo.png" id="banner-logo" alt="Landing Page">
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+                        <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page">
                         <!--End of Navigation Logo-->
 
                     </div>
@@ -104,26 +104,44 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#banner">Domů</a>
+                                <a href="#banner" class="active">Domů</a>
                             </li>
                             <li>
-                                <a href="#about">O mně</a>
+                                <a href="#about" class="">O mně</a>
                             </li>
                             <li>
-                                <a href="#gallery">Galerie</a>
+                                <a href="#gallery" class="">Galerie</a>
                             </li>
                             <li>
-                                <a href="#services">Služby</a>
+                                <a href="#services" class="">Služby</a>
                             </li>
                             <li>
-                                <a href="#contacts">kontakty</a>
+                                <a class="contact-button" href="#contacts">kontakty</a>
                             </li>
                         </ul>
                     </nav>
                     <!--End of Main Navigation-->
 
                     <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav>
+                    <nav id="nav-mobile">
+                        <ul>
+                            <li>
+                                <a href="#banner" class="active">Domů</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="">O mně</a>
+                            </li>
+                            <li>
+                                <a href="#gallery" class="">Galerie</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="">Služby</a>
+                            </li>
+                            <li>
+                                <a class="contact-button" href="#contacts">kontakty</a>
+                            </li>
+                        </ul>
+                    </nav>
 
                 </div>
             </div>
@@ -152,13 +170,13 @@
     <main id="content">
 
         <!--Introduction-->
-        <section id="about" class="introduction scrollto">
+        <section id="about" class="introduction scrollto" tabindex="-1">
 
             <div class="row clearfix">
 
                 <div class="col-3">
                     <div class="section-heading">
-                        <h3>SUCCESS</h3>
+                        <h3>O MNĚ</h3>
                         <h2 class="section-title">???</h2>
                         <p class="section-subtitle">
                         </p>
@@ -169,7 +187,8 @@
                 <div class="col-2-3">
 
                     <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s"
+                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-html5 fa-2x"></i>
@@ -184,7 +203,8 @@
                     <!--End of Icon Block-->
 
                     <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s"
+                         style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                         <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-bolt fa-2x"></i>
@@ -194,7 +214,8 @@
                             <h4>???</h4>
                             <p>Zabýváme se zpracováním projektové dokumentace všech typů pozemních staveb - rodinné
                                 domy, bytová výstavba,
-                                občanské stavby, průmyslové objekty a objekty k podnikání, rekreační stavby atd., jejich
+                                občanské stavby, průmyslové objekty a objekty k&nbsp;podnikání, rekreační stavby atd.,
+                                jejich
                                 novostavby, rekonstrukce, přístavby, vestavby apod.
                             </p>
                         </div>
@@ -202,7 +223,8 @@
                     <!--End of Icon Block-->
 
                     <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s"
+                         style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                         <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-tablet fa-2x"></i>
@@ -210,16 +232,18 @@
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
                             <h4>???</h4>
-                            <p>Komplexnost našich projektů je zajištěna trvalou spoluprací s autorizovanými techniky a
+                            <p>Komplexnost našich projektů je zajištěna trvalou spoluprací s&nbsp;autorizovanými
+                                techniky a
                                 inženýry ve stavebních profesích. Pro své
-                                projekty rovněž zajišťujeme kompletní inženýrskou činnost k získání povolení k výstavbě.
+                                projekty rovněž zajišťujeme kompletní inženýrskou činnost k&nbsp;získání povolení k&nbsp;výstavbě.
                             </p>
                         </div>
                     </div>
                     <!--End of Icon Block-->
 
                     <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s"
+                         style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                         <!--Icon-->
                         <div class="icon">
                             <i class="fa fa-rocket fa-2x"></i>
@@ -242,124 +266,85 @@
         <!--End of Introduction-->
 
 
-        <!--Gallery-->
-        <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
-               data-featherlight-filter="a">
+        <section id="projects" class="scrollto clearfix" tabindex="-1">
+            <div class="row clearfix section-heading">
+                <h3>GALERIE</h3>
 
-            <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-               data-wow-delay="0.1s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/></a>
-            <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-               data-wow-delay="0.3s"><img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/></a>
-            <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-               data-wow-delay="0.5s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
-            <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-               data-wow-delay="1.1s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
-            <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-               data-wow-delay="0.9s"><img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/></a>
-            <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-               data-wow-delay="0.7s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
+                <!--Gallery-->
+                <aside id="gallery" class=" text-center scrollto clearfix" data-featherlight-gallery=""
+                       data-featherlight-filter="a" tabindex="-1">
 
-        </aside>
-        <!--End of Gallery-->
+                    <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image"
+                       class="col-3 wow fadeIn" data-wow-delay="0.1s"
+                       style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"><img
+                            src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"></a>
+                    <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image"
+                       class="col-3 wow fadeIn" data-wow-delay="0.3s"
+                       style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"><img
+                            src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"></a>
+                    <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image"
+                       class="col-3 wow fadeIn" data-wow-delay="0.5s"
+                       style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;"><img
+                            src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"></a>
+                    <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image"
+                       class="col-3 wow fadeIn" data-wow-delay="1.1s"
+                       style="visibility: visible; animation-delay: 1.1s; animation-name: fadeIn;"><img
+                            src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"></a>
+                    <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image"
+                       class="col-3 wow fadeIn" data-wow-delay="0.9s"
+                       style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"><img
+                            src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"></a>
+                    <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image"
+                       class="col-3 wow fadeIn" data-wow-delay="0.7s"
+                       style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;"><img
+                            src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"></a>
 
-
-        <!--Clients-->
-        <section id="clients" class="scrollto clearfix">
-            <div class="row clearfix">
-
-                <div class="col-3">
-
-                    <div class="section-heading">
-                        <h3>TRUST</h3>
-                        <h2 class="section-title">Companies who use our services</h2>
-                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-                    </div>
-
-                </div>
-
-                <div class="col-2-3">
-
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo1.png" alt="Company"/>
-                        <div class="client-overlay"><span>Tree</span></div>
-                    </a>
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo2.png" alt="Company"/>
-                        <div class="client-overlay"><span>Fingerprint</span></div>
-                    </a>
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo3.png" alt="Company"/>
-                        <div class="client-overlay"><span>The Man</span></div>
-                    </a>
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo4.png" alt="Company"/>
-                        <div class="client-overlay"><span>Mustache</span></div>
-                    </a>
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo5.png" alt="Company"/>
-                        <div class="client-overlay"><span>Goat</span></div>
-                    </a>
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo6.png" alt="Company"/>
-                        <div class="client-overlay"><span>Justice</span></div>
-                    </a>
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo7.png" alt="Company"/>
-                        <div class="client-overlay"><span>Ball</span></div>
-                    </a>
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo8.png" alt="Company"/>
-                        <div class="client-overlay"><span>Cold</span></div>
-                    </a>
-
-                    <a href="#" class="col-3">
-                        <img src="images/company-images/company-logo9.png" alt="Company"/>
-                        <div class="client-overlay"><span>Cold</span></div>
-                    </a>
-
-                </div>
-
+                </aside>
+                <!--End of Gallery-->
             </div>
         </section>
-        <!--End of Clients-->
 
+        <!--Clients-->
 
         <!--Start of Services-->
-        <section id="services" class="scrollto clearfix">
-            <div class="row clearfix">
+        <section id="services" class="scrollto clearfix" tabindex="-1">
+            <div class="row clearfix section-heading">
+                <h3>SLUŽBY</h3>
 
                 <div class="col-3">
                     <ul class="service-menu">
                         <li>
-                            <span class="services-button wow fadeInLeft" data-wow-delay="0.1s" id="services-1"
-                                  onclick="showServices(1);">
+                            <span class="services-button wow fadeInLeft active" data-wow-delay="0.1s" id="services-1"
+                                  onclick="showServices(1);"
+                                  style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
                                 <i class="fa fa-pencil fa-1x"></i>
-<!--                                 <span class="fa-stack fa-2x">-->
-<!--                                    <i class="fa-solid fa-circle fa-stack-2x"></i>-->
-<!--                                    <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>-->
-<!--                                  </span>-->
+                                <!--                                 <span class="fa-stack fa-2x">-->
+                                <!--                                    <i class="fa-solid fa-circle fa-stack-2x"></i>-->
+                                <!--                                    <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>-->
+                                <!--                                  </span>-->
                                 PROJEKTOVÁ ČINNOST
                             </span>
                         </li>
                         <li>
-                            <span class="services-button wow fadeInLeft" data-wow-delay="0.2s" id="services-2"
-                                  onclick="showServices(2);">
+                            <span class="services-button wow fadeInLeft inactive" data-wow-delay="0.2s" id="services-2"
+                                  onclick="showServices(2);"
+                                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                                 <i class="fa fa-file fa-1x"></i>
                                 INŽENÝRSKÁ ČINNOST
                             </span>
                         </li>
                         <li>
-                            <span class="services-button wow fadeInLeft" data-wow-delay="0.3s" id="services-3"
-                                  onclick="showServices(3);">
+                            <span class="services-button wow fadeInLeft inactive" data-wow-delay="0.3s" id="services-3"
+                                  onclick="showServices(3);"
+                                  style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                 <i class="fa fa-binoculars fa-1x"></i>
                                 DOZORY
                             </span>
                         </li>
                         <li>
-                            <span class="services-button wow fadeInLeft" data-wow-delay="0.4s" id="services-4"
-                                  onclick="showServices(4);">
+                            <span class="services-button wow fadeInLeft inactive" data-wow-delay="0.4s" id="services-4"
+                                  onclick="showServices(4);"
+                                  style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                                 <i class="fa fa-question-circle-o fa-1x"></i>
                                 OSTATNÍ
                             </span>
@@ -368,22 +353,22 @@
 
                 </div>
 
-                <div class="col-2-3 wow fadeInRight">
-                    <div class="services-data" id="services-data-1">
+                <div class="col-2-3 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <div class="services-data active" id="services-data-1">
                         <ul>
                             <li> projekty pozemních staveb– stavby pro bydlení, ubytování a rekreaci, administrativní
                                 budovy,
                                 podnikatelské objekty, provozovny, skladovací haly
                             </li>
                             <li> rodinné domy, bytové domy, občanské a podnikatelské objekty, půdní vestavby, objekty
-                                k rekreaci atd.
+                                k&nbsp;rekreaci atd.
                             </li>
                             <li> osazení typových projektů rodinných domů do území</li>
                             <li> Projekty stavebních úprav nebo rekonstrukcí rodinných domů</li>
                             <li> Projekty půdních vestaveb, nástaveb a přístaveb</li>
                             <li> projekty snížení energetické náročnosti budov, zateplení budov</li>
                             <li> projekty přípojek inženýrských sítí</li>
-                            <li> novostavby, stavební úpravy, přístavby, změny v užívání</li>
+                            <li> novostavby, stavební úpravy, přístavby, změny v&nbsp;užívání</li>
                             <li> studie, projekty pro územní rozhodnutí, stavební povolení a provedení stavby</li>
                             <li> projekty pro účely žádosti o dotaci v programu Nová zelená úsporám</li>
                             <li> požárně bezpečnostní řešení staveb</li>
@@ -394,13 +379,13 @@
                             <li> Dokumentace k odstranění staveb</li>
                         </ul>
                     </div>
-                    <div class="services-data" id="services-data-2">
+                    <div class="services-data inactive" id="services-data-2">
                         <ul>
                             <li> zajištění vyjádření dotčených orgánů a provozovatelů inženýrských sítí</li>
                             <li> vyřízení ohlášení, územního rozhodnutí, stavebního povolení, veřejnoprávní smlouvy</li>
                         </ul>
                     </div>
-                    <div class="services-data" id="services-data-3">
+                    <div class="services-data inactive" id="services-data-3">
                         <ul>
                             <li> Technický dozor investora</li>
                             o Výkon technického dozoru spočívá zejména v kontrole a přejímání dílčích stavebních
@@ -424,7 +409,7 @@
                             pouze na stavbách, které jsem projektoval.
                         </ul>
                     </div>
-                    <div class="services-data" id="services-data-4">
+                    <div class="services-data inactive" id="services-data-4">
                         <ul>
                             <li> pasporty staveb (dokumentace skutečného provedení staveb)</li>
                             <li> výpočty odvodů za vynětí ze zemědělského půdního fondu</li>
@@ -453,10 +438,11 @@
         <!--End of Services-->
 
         <!-- ================ contact section start ================= -->
-        <section id="contacts" class="contact-section area-padding">
+        <section id="contacts" class="contact-section scrollto area-padding" tabindex="-1">
             <div class="contact-container">
                 <div class="d-map">
-                    <div class="mapouter">
+                    <div class="mapouter wow fadeInUp" data-wow-delay="0.1s"
+                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="gmap_canvas">
                             <div style="width: 100%">
                                 <iframe width="100%" height="450"
@@ -469,7 +455,8 @@
                 </div>
 
                 <div class="row clearfix">
-                    <div class="col-2 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-2 text-center wow fadeInUp" data-wow-delay="0.1s"
+                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                         <div class="media contact-info">
                             <div class="icon">
                                 <i class="fa fa-phone fa-2x"></i>
@@ -479,7 +466,8 @@
                                 <!--                                <p>maly šedy text pod černym</p>-->
                             </div>
                         </div>
-                        <div class="media contact-info wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="media contact-info wow fadeInUp" data-wow-delay="0.2s"
+                             style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                             <div class="icon">
                                 <i class="fa fa-envelope fa-2x"></i>
                             </div>
@@ -488,7 +476,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-2 text-center wow fadeInUp" data-wow-delay="0.3s"
+                         style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                         <div class="media contact-info">
                             <div class="icon">
                                 <i class="fa fa-home fa-2x"></i>
@@ -499,7 +488,8 @@
                                         Ostrý Kámen 38 <br> Karle, 56802 </a></h3>
                             </div>
                         </div>
-                        <div class="media contact-info wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="media contact-info wow fadeInUp" data-wow-delay="0.4s"
+                             style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                             <div class="icon">
                                 <i class="fa fa-book fa-2x"></i>
                             </div>
@@ -539,9 +529,9 @@
             </div>
             <!--End of Social Icons in Footer-->
             <div class="col-2 text-center">
-                &copy;
+                ©
                 &nbsp;
-                <span id="actual_year"></span>
+                <span id="actual_year">2022</span>
                 <script>document.getElementById("actual_year").innerHTML = new Date().getFullYear();</script>
                 Petr Češka
             </div>
@@ -550,6 +540,7 @@
     <!--End of Footer-->
 
 </div>
+<div style="position: static !important;"></div>
 
 <!-- Include JavaScript resources -->
 <script src="js/jquery.1.8.3.min.js"></script>
@@ -567,5 +558,5 @@
 <script src="js/services.js"></script>
 
 
-</body>
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; overflow: hidden; display: none;"></a></body>
 </html>
